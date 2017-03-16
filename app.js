@@ -100,7 +100,7 @@ $(window).on("load resize", function(e) {
 
     $(document)
         .keypress(function(e) {
-            if (e.keyCode == 81) {
+            if (e.keyCode == 81 || e.keyCode == 113) {
                 $("#1").toggleClass("active ");
                 var obj = document.createElement("audio");
                 obj.src = sounds[81];
@@ -112,7 +112,7 @@ $(window).on("load resize", function(e) {
                 }, 100);
             }
 
-            if (e.keyCode == 87) {
+            if (e.keyCode == 87|| e.keyCode == 119) {
                 $("#2").toggleClass("active ");
                 var obj = document.createElement("audio");
                 obj.src = sounds[87];
@@ -124,7 +124,7 @@ $(window).on("load resize", function(e) {
                 }, 100);
             }
 
-            if (e.keyCode == 69) {
+            if (e.keyCode == 69 || e.keyCode == 101) {
                 $("#3").toggleClass("active ");
                 var obj = document.createElement("audio");
                 obj.src = sounds[69];
@@ -136,7 +136,7 @@ $(window).on("load resize", function(e) {
                 }, 100);
             }
 
-            if (e.keyCode == 82) {
+            if (e.keyCode == 82 || e.keyCode == 114) {
                 $("#4").toggleClass("active ");
                 var obj = document.createElement("audio");
                 obj.src = sounds[82];
@@ -148,7 +148,7 @@ $(window).on("load resize", function(e) {
                 }, 100);
             }
 
-            if (e.keyCode == 65) {
+            if (e.keyCode == 65 || e.keyCode == 97) {
                 $("#5").toggleClass("active ");
                 var obj = document.createElement("audio");
                 obj.src = sounds[97];
@@ -160,7 +160,7 @@ $(window).on("load resize", function(e) {
                 }, 100);
             }
 
-            if (e.keyCode == 83) {
+            if (e.keyCode == 83 || e.keyCode == 115) {
                 $("#6").toggleClass("active ");
                 var obj = document.createElement("audio");
                 obj.src = sounds[83];
@@ -172,7 +172,7 @@ $(window).on("load resize", function(e) {
                 }, 100);
             }
 
-            if (e.keyCode == 68) {
+            if (e.keyCode == 68 || e.keyCode == 100) {
                 $("#7").toggleClass("active ");
                 var obj = document.createElement("audio");
                 obj.src = sounds[68];
@@ -184,7 +184,7 @@ $(window).on("load resize", function(e) {
                 }, 100);
             }
 
-            if (e.keyCode == 70) {
+            if (e.keyCode == 70 || e.keyCode == 102) {
                 $("#8").toggleClass("active ");
                 var obj = document.createElement("audio");
                 obj.src = sounds[70];
@@ -196,9 +196,8 @@ $(window).on("load resize", function(e) {
                 }, 100);
             }
 
-            console.log(e.keyCode);
 
-            if (e.keyCode == 90) {
+            if (e.keyCode == 90|| e.keyCode == 122 || e.keyCode == 89|| e.keyCode == 121 ) {
                 $("#9").toggleClass("active ");
                 var obj = document.createElement("audio");
                 obj.src = sounds[90];
@@ -210,7 +209,7 @@ $(window).on("load resize", function(e) {
                 }, 100);
             }
 
-            if (e.keyCode == 88) {
+            if (e.keyCode == 88 || e.keyCode == 120) {
                 $("#10").toggleClass("active ");
                 var obj = document.createElement("audio");
                 obj.src = sounds[88];
@@ -222,7 +221,7 @@ $(window).on("load resize", function(e) {
                 }, 100);
             }
 
-            if (e.keyCode == 67) {
+            if (e.keyCode == 67 || e.keyCode == 99) {
                 $("#11").toggleClass("active ");
                 var obj = document.createElement("audio");
                 obj.src = sounds[67];
@@ -234,7 +233,7 @@ $(window).on("load resize", function(e) {
                 }, 100);
             }
 
-            if (e.keyCode == 86) {
+            if (e.keyCode == 86 || e.keyCode == 118) {
                 $("#12").toggleClass("active ");
                 var obj = document.createElement("audio");
                 obj.src = sounds[86];
