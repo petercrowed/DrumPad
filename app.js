@@ -25,25 +25,29 @@ $(window).on("load resize", function(e) {
         width: width_diff + "px",
         height: width_diff + "px",
     });
-    console.log(width_diff);
 
-    $('#1').click(function(evt) {
+
+
+    	FastClick.attach(document.body);
+
+
+    $('#1').fastClick(function(evt) {
         var obj = document.createElement("audio");
         obj.src = sounds[81];
               $('.foo').audioSystem(obj);
     });
-    $('#2').click(function(evt) {
+    $('#2').fastClick(function(evt) {
         var obj = document.createElement("audio");
         obj.src = sounds[87];
           $('.foo').audioSystem(obj);
     });
-    $('#3').click(function(evt) {
+    $('#3').fastClick(function(evt) {
         var obj = document.createElement("audio");
         obj.src = sounds[69];
             $('.foo').audioSystem(obj);
     });
 
-    $('#4').click(function(evt) {
+    $('#4').fastClick(function(evt) {
         var obj = document.createElement("audio");
         obj.src = sounds[82];
           $('.foo').audioSystem(obj);
@@ -100,7 +104,8 @@ $(window).on("load resize", function(e) {
 
     $(document)
         .keypress(function(e) {
-            if (e.keyCode == 81 || e.keyCode == 113) {
+            console.log( e.keyCode);
+            if (e.keyCode == 81 || e.keyCode == 113|| e.keyCode == 117 || e.keyCode == 85) {
                 $("#1").toggleClass("active ");
                 var obj = document.createElement("audio");
                 obj.src = sounds[81];
@@ -112,7 +117,7 @@ $(window).on("load resize", function(e) {
                 }, 100);
             }
 
-            if (e.keyCode == 87|| e.keyCode == 119) {
+            if (e.keyCode == 87|| e.keyCode == 119 || e.keyCode == 105 || e.keyCode == 73 ) {
                 $("#2").toggleClass("active ");
                 var obj = document.createElement("audio");
                 obj.src = sounds[87];
@@ -124,7 +129,7 @@ $(window).on("load resize", function(e) {
                 }, 100);
             }
 
-            if (e.keyCode == 69 || e.keyCode == 101) {
+            if (e.keyCode == 69 || e.keyCode == 101 || e.keyCode == 111|| e.keyCode == 79 ) {
                 $("#3").toggleClass("active ");
                 var obj = document.createElement("audio");
                 obj.src = sounds[69];
@@ -136,7 +141,7 @@ $(window).on("load resize", function(e) {
                 }, 100);
             }
 
-            if (e.keyCode == 82 || e.keyCode == 114) {
+            if (e.keyCode == 82 || e.keyCode == 114 || e.keyCode == 80 || e.keyCode == 112  ) {
                 $("#4").toggleClass("active ");
                 var obj = document.createElement("audio");
                 obj.src = sounds[82];
@@ -148,7 +153,7 @@ $(window).on("load resize", function(e) {
                 }, 100);
             }
 
-            if (e.keyCode == 65 || e.keyCode == 97) {
+            if (e.keyCode == 65 || e.keyCode == 97 || e.keyCode == 72 || e.keyCode == 104)  {
                 $("#5").toggleClass("active ");
                 var obj = document.createElement("audio");
                 obj.src = sounds[97];
@@ -160,7 +165,7 @@ $(window).on("load resize", function(e) {
                 }, 100);
             }
 
-            if (e.keyCode == 83 || e.keyCode == 115) {
+            if (e.keyCode == 83 || e.keyCode == 115|| e.keyCode == 74 || e.keyCode == 106) {
                 $("#6").toggleClass("active ");
                 var obj = document.createElement("audio");
                 obj.src = sounds[83];
@@ -172,7 +177,7 @@ $(window).on("load resize", function(e) {
                 }, 100);
             }
 
-            if (e.keyCode == 68 || e.keyCode == 100) {
+            if (e.keyCode == 68 || e.keyCode == 100|| e.keyCode == 75 || e.keyCode == 107)  {
                 $("#7").toggleClass("active ");
                 var obj = document.createElement("audio");
                 obj.src = sounds[68];
@@ -184,7 +189,7 @@ $(window).on("load resize", function(e) {
                 }, 100);
             }
 
-            if (e.keyCode == 70 || e.keyCode == 102) {
+            if (e.keyCode == 70 || e.keyCode == 102 || e.keyCode == 76 || e.keyCode == 108 ) {
                 $("#8").toggleClass("active ");
                 var obj = document.createElement("audio");
                 obj.src = sounds[70];
@@ -197,7 +202,7 @@ $(window).on("load resize", function(e) {
             }
 
 
-            if (e.keyCode == 90|| e.keyCode == 122 || e.keyCode == 89|| e.keyCode == 121 ) {
+            if (e.keyCode == 90|| e.keyCode == 122 || e.keyCode == 66 || e.keyCode == 98 ) {
                 $("#9").toggleClass("active ");
                 var obj = document.createElement("audio");
                 obj.src = sounds[90];
@@ -209,7 +214,7 @@ $(window).on("load resize", function(e) {
                 }, 100);
             }
 
-            if (e.keyCode == 88 || e.keyCode == 120) {
+            if (e.keyCode == 88 || e.keyCode == 120 || e.keyCode == 78 || e.keyCode == 110) {
                 $("#10").toggleClass("active ");
                 var obj = document.createElement("audio");
                 obj.src = sounds[88];
@@ -221,7 +226,7 @@ $(window).on("load resize", function(e) {
                 }, 100);
             }
 
-            if (e.keyCode == 67 || e.keyCode == 99) {
+            if (e.keyCode == 67 || e.keyCode == 99 || e.keyCode == 77 || e.keyCode == 109) {
                 $("#11").toggleClass("active ");
                 var obj = document.createElement("audio");
                 obj.src = sounds[67];
@@ -233,7 +238,7 @@ $(window).on("load resize", function(e) {
                 }, 100);
             }
 
-            if (e.keyCode == 86 || e.keyCode == 118) {
+            if (e.keyCode == 86 || e.keyCode == 118 || e.keyCode == 44  ) {
                 $("#12").toggleClass("active ");
                 var obj = document.createElement("audio");
                 obj.src = sounds[86];

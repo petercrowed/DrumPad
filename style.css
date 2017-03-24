@@ -10,15 +10,23 @@ header {
   border-bottom: 1px solid #000;
 }
 
+div {
+  color: grey;
+   font-family: "Comic Sans MS", cursive, sans-serif;
+   font-size: 14px;
+   /*padding: 1em;*/
+
+}
 #main {
-  margin: 0 auto;
+
+  margin: auto;
   display: block;
   position: relative;
   max-width: 870px;
   padding-top: 20px;
 }
 #main #info {
-  width: 129x;
+
   position: absolute;
   left: 385px;
   top: 24px;
@@ -41,7 +49,7 @@ footer .holder {
   margin: 0 auto;
 }
 
-#banks {
+/*#banks {
   width: 56%;
   position: absolute;
   left: 50px;
@@ -64,7 +72,10 @@ footer .holder {
 #banks ul li a {
   color: #333;
   text-decoration: none;
-}
+}*/
+
+
+
 
 #padgrid {
   margin-top: 70px;
@@ -73,8 +84,7 @@ footer .holder {
   background: rgba(0, 0, 0, 0.1);
 }
 #padgrid .pad {
-  width: 198px;
-  height: 200px;
+
   background: #333;
   display: inline-block;
   margin: 7.5px 5px;
@@ -91,6 +101,12 @@ footer .holder {
   background-color: #333;
   box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
   top: 2px;
+}
+
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+
 }
 
 ul.grill {
